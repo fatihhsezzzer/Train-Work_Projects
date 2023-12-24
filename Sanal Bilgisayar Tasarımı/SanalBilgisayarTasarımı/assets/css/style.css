@@ -1,0 +1,160 @@
+#baslatmenu {
+  border-right: 5px solid #e67e22 !important;
+}
+.dropdown-divider {
+  width: 150px;
+}
+.dropdown-menu-2 {
+  width: 150px;
+}
+.dropdown-menu > li {
+  width: 200px !important;
+}
+
+.dropdown-item-1 {
+  text-decoration: none;
+  float: right;
+}
+.sonkullanılanlar {
+  float: right;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.elements {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: wheat;
+  cursor: pointer !important;
+}
+.elements i {
+  font-size: 60px;
+}
+.navbar {
+  height: 45px;
+}
+#date {
+  margin-left: 30px;
+}
+#wifi {
+  padding-top: 12px;
+  margin-right: 15px;
+}
+#sound {
+  margin-right: 15px !important;
+  padding-top: 25px !important;
+}
+
+#fullSizeImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#fullSizeImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1000;
+}
+
+#power {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+}
+#power > i {
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+}
+.btn-close.red-background {
+  background-color: red;
+}
+.file-manager .drive {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-manager .drive-icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.file-manager .drive-info {
+  flex-grow: 1;
+}
+
+.file-manager .drive-name {
+  font-weight: bold;
+}
+
+.file-manager .drive-size {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.file-manager .drive-usage-bar {
+  background-color: #e0e0e0;
+  position: relative;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.file-manager .drive-used {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.icon-container i {
+  margin-right: 10px;
+}
+
+.icon-container .fa-desktop,
+.fa-desktop {
+  color: #0d6efd;
+}
+
+.icon-container .fa-cubes,
+.fa-cubes {
+  color: #ffc107;
+}
+
+.icon-container .fa-image,
+.fa-image {
+  color: #198754;
+}
+
+.icon-container .fa-folder,
+.fa-folder {
+  color: #dc3545;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6;
+}
+.img-thumbnail {
+  cursor: pointer;
+}

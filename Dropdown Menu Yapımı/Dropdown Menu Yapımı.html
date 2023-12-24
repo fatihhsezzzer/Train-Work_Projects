@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="content">
+    <a class="hover" href="#">Anasayfa</a>
+</div>
+<div class="content1">
+    <a class="hover1" href="#">Hakkımızda</a>
+</div>
+<div class="content2">
+    <a class="hover2" href="#">Galeri</a>
+    <div class="sosyal">
+        <ul class="social-media">
+            <li>Doğa</li>
+            <li>İnsan</li>
+            <li>Araba</li>
+        </ul>
+    </div>
+</div>
+<div class="content3">
+    <a class="hover3" href="#">İletişim</a>
+</div>
+
+</body>
+</html>
+
+<style>.sosyal {
+    width: 200px;
+    height: auto;
+    padding: 10px !important;
+    background-color: bisque;
+    position: absolute;
+    display: none;
+}
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    display: inline-block;
+}
+
+.sosyal .social-media {
+    padding: 0;
+    list-style: none;
+}
+
+.sosyal .social-media li {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.hover,
+.hover1,
+.hover2,
+.hover3 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content2:hover .sosyal {
+    display: block;
+}
+</style>

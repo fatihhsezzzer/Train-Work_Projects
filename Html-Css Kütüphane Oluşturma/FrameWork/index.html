@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- SOL TARAFTAKİ SABİT MENÜ BAŞLANGIÇ -->
+    <div class="col-2 sidebar">
+        <nav>
+            <ul class="menu">
+              <li><a href="#SLİDER">SLİDER</a>
+                <ul class="menu">
+                  <li><a href="#radio-slider">Radio Slider</a></li>
+                  <li><a href="#AUTO-SLİDER">Auto Slider</a></li>
+                  <li><a href="#HOVER-SLİDER">Hover Slider</a></li>
+                </ul>
+              </li>
+              <li><a href="#TABLOLAR">TABLOLAR</a>
+                <ul class="menu">
+                  <li><a href="#responsive-tablo">Responsive</a></li>
+                  <li><a href="#bordered-tablo">Bordered</a></li>
+                  <li><a href="#hoverable-tablo">Hoverable</a></li>
+                  <li><a href="#stripted-tablo">Stripted</a></li>
+                </ul>
+              </li>
+              <li><a href="#MENÜLER">MENÜLER</a>
+                <ul class="menu">
+                  <li><a href="#dropdown-menü">dropdown</a></li>
+                  <li><a href="#sabit-menü">Sabit</a></li>
+                  <li><a href="#block-menü">Block</a></li>
+                  <li><a href="#inline-menü">İnline</a></li>
+                </ul>
+              </li>
+              <li><a href="#FORM">FORM</a></li>
+              <li><a href="#RESİM">RESİM</a>
+                <ul class="menu">
+                  <li><a href="#centered">Centered</a></li>
+                  <li><a href="#vertically">Vertically</a></li>
+                  <li><a href="#original-size">Original Size</a></li>
+                  <li><a href="#horizontally">Horizontally</a></li>
+                  <li><a href="#rounded">Rounded</a></li>
+                  <li><a href="#regular">Regular</a></li>
+                </ul>
+              </li>
+              <li><a href="#BUTON">BUTON</a></li>
+              <li><a href="#METİNLER">METİNLER</a></li>
+              <li><a href="#MARGİN-PADDİNG">MARGİN-PADDİNG</a></li>
+              <li><a href="#BAŞLIK">BAŞLIK</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        <!-- SOL TARAFTAKİ SABİT MENÜ BİTİŞ -->
+
+
+        <!-- CONTAİNER BAŞLANGIÇ -->
+    <div class="container">
+      <!-- GRİD YAPISI -->
+      <section class="col-12 conclude" id="GRİD">
+        <p class="content-title">GRİD YAPISI:
+        <p>Aşağıda projede kullanılan grid yapısı  örnek olarak gösterilmiştir.</p>
+    </section><br>
+    <div class="row">
+
+      
+        <div class="col-1">col-1</div>
+        <div class="col-2">col-2</div>
+        <div class="col-3">col-3</div>
+        <div class="col-4">col-4</div>
+        <div class="col-5">col-5</div>
+        <div class="col-6">col-6</div>
+        <div class="col-7">col-7</div>
+        <div class="col-8">col-8</div>
+        <div class="col-9">col-9</div>
+        <div class="col-10">col-10</div>
+        <div class="col-11">col-11</div>
+        <div class="col-12">col-12</div>
+      
+    </div><br><hr>
+        <!-- SLİDER BAŞLANGIÇ -->
+    <section class="col-12 conclude" id="SLİDER">
+        <p class="content-title">SLİDER:
+            <br><br>RADİO SLİDER</p>
+        <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+    </section><br>
+        <div class="row" id="radio-slider">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;div class="slider"&gt;
+                &lt;input type="radio" name="slider" id="slide1" checked&gt;
+                &lt;input type="radio" name="slider" id="slide2"&gt;
+                &lt;input type="radio" name="slider" id="slide3"&gt;
+                &lt;div class="slides"&gt;
+                  &lt;div class="slide"&gt;
+                    &lt;img class="slide-img" src="assets/images/slider1.jpeg"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="slide"&gt;
+                    &lt;img class="slide-img" src="assets/images/slider2.jpeg"&gt;
+                  &lt;/div&gt;
+                  &lt;div class="slide"&gt;
+                    &lt;img class="slide-img" src="assets/images/slider3.jpeg"&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+                </code></pre>
+              </div>
+              <!-- ÖRNEK BAŞLANGIÇ -->
+              <div class="col-6 slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div class="slides">
+                    <div class="slide">
+                        <img class="slide-img" src="assets/images/slider1.jpeg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="assets/images/slider2.jpeg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="assets/images/slider3.jpeg" alt="Slide 3">
+                    </div>
+                </div>
+                
+            </div>
+              
+        </div><br>
+        <section class="col-12 conclude" id="AUTO-SLİDER">
+            <p class="content-title">
+                AUTO SLİDER</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section><br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 auto-slider"&gt;
+                    &lt;img src="assets/images/slider1.jpeg"&gt;
+                    &lt;img src="assets/images/slider2.jpeg"&gt;
+                    &lt;img src="assets/images/slider3.jpeg"&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+
+            <div class="col-6 auto-slider">
+                <img src="assets/images/slider1.jpeg">
+                <img src="assets/images/slider2.jpeg">
+                <img src="assets/images/slider3.jpeg">
+              </div>
+              
+         </div>
+         <section class="col-12 conclude" id="HOVER-SLİDER">
+            <p class="content-title">
+                HOVER SLİDER</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section><br>
+         <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 hover-slider"&gt;
+                    &lt;img src="assets/images/slider1.jpeg"&gt;
+                    &lt;img src="assets/images/slider2.jpeg"&gt;
+                    &lt;img src="assets/images/slider3.jpeg"&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+            <div class="col-6 hover-slider">
+                <img src="assets/images/slider1.jpeg">
+                <img src="assets/images/slider2.jpeg">
+                <img src="assets/images/slider3.jpeg">
+              </div>
+         </div>
+        
+        
+        <!-- SLİDER BİTİŞ -->
+        <section class="col-12 conclude" id="TABLOLAR">
+            <p class="content-title">
+                TABLO ÖRNEKLERİ: <br><br>RESPONSİVE TABLO</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section><br>
+
+
+
+        <div class="row" id="responsive-tablo">
+            <div class="col-6 code-container">
+  <pre><code class="language-html">
+&lt;table class="responsive-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+      &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+  </code></pre>
+</div>
+
+<!-- Örnek  başlangıcı -->
+<table class="col-6 responsive-table">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </tbody>
+  </table>
+        </div><br>
+        <section class="col-12 conclude" id="bordered-tablo">
+            <p class="content-title">
+               BORDERED TABLO</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section><br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;table class="bordered-table"&gt;
+                  &lt;thead&gt;
+                      &lt;tr&gt;
+                          &lt;th&gt;Başlık 1&lt;/th&gt;
+                          &lt;th&gt;Başlık 2&lt;/th&gt;
+                          &lt;th&gt;Başlık 3&lt;/th&gt;
+                      &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                      &lt;tr&gt;
+                          &lt;td&gt;Veri 1&lt;/td&gt;
+                          &lt;td&gt;Veri 2&lt;/td&gt;
+                          &lt;td&gt;Veri 3&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                          &lt;td&gt;Veri 4&lt;/td&gt;
+                          &lt;td&gt;Veri 5&lt;/td&gt;
+                          &lt;td&gt;Veri 6&lt;/td&gt;
+                      &lt;/tr&gt;
+                  &lt;/tbody&gt;
+              &lt;/table&gt;
+                </code></pre>
+              </div>
+              
+            <table class="col-6 bordered-table">
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div><br>
+        
+        <section class="col-12 conclude" id="hoverable-tablo">
+            <p class="content-title">
+               HOVERABLE TABLO</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section><br>
+        <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;table class="hoverable-table"&gt;
+                &lt;thead&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Header 1&lt;/th&gt;
+                    &lt;th&gt;Header 2&lt;/th&gt;
+                    &lt;th&gt;Header 3&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Data 1&lt;/td&gt;
+                    &lt;td&gt;Data 2&lt;/td&gt;
+                    &lt;td&gt;Data 3&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/tbody&gt;
+              &lt;/table&gt;
+                </code></pre>
+              </div>
+
+<!-- Örnek  başlangıcı -->
+<table class="col-6 hoverable-table">
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+        </div>
+        <section class="col-12 conclude" id="stripted-tablo">
+            <p class="content-title">
+                TABLO ÖRNEKLERİ: <br><br>STRİPTED TABLO</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+  <pre><code class="language-html">
+&lt;table class="stripted-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+      &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+  </code></pre>
+</div>
+
+<!-- Örnek  başlangıcı -->
+<table class="col-6 responsive-table">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </tbody>
+  </table>
+        </div><br>
+        <section class="col-12 conclude" id="MENÜLER">
+            <p class="content-title">
+                MENÜ ÖRNEKLERİ: <br><br>DROPDOWN MENÜ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row" id="dropdown-menü">
+            <div class="col-6 code-container">
+                <div class="code-container">
+                    <pre><code class="language-html">
+                  &lt;div class="menu"&gt;
+                    &lt;ul class="top-menu"&gt;
+                      &lt;li class="top-item"&gt;&lt;a href="#"&gt;Seçenek 1&lt;/a&gt;
+                        &lt;ul class="sub-menu"&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 1&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 2&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class="top-item"&gt;&lt;a href="#"&gt;Seçenek 2&lt;/a&gt;
+                        &lt;ul class="sub-menu"&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class="top-item"&gt;&lt;a href="#"&gt;Seçenek 3&lt;/a&gt;
+                        &lt;ul class="sub-menu"&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 1&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 2&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class="top-item"&gt;&lt;a href="#"&gt;Seçenek 4&lt;/a&gt;
+                        &lt;ul class="sub-menu"&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 1&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 2&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                      &lt;li class="top-item"&gt;&lt;a href="#"&gt;Seçenek 5&lt;/a&gt;
+                        &lt;ul class="sub-menu"&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 1&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 2&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Alt Seçenek 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                    </code></pre>
+                  </div>
+                  
+
+            </div>
+        <div class="col-6 menu">
+            <ul class="top-menu">
+              <li class="top-item"><a href="#">Seçenek 1</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Alt Seçenek 1</a></li>
+                  <li><a href="#">Alt Seçenek 2</a></li>
+                  <li><a href="#">Alt Seçenek 3</a></li>
+                </ul>
+              </li>
+              <li class="top-item"><a href="#">Seçenek 2</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Alt Seçenek</a></li>
+                </ul>
+              </li>
+              <li class="top-item"><a href="#">Seçenek 3</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Alt Seçenek 1</a></li>
+                  <li><a href="#">Alt Seçenek 2</a></li>
+                  <li><a href="#">Alt Seçenek 3</a></li>
+                </ul>
+              </li>
+              <li class="top-item" ><a href="#">Seçenek 4</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Alt Seçenek 1</a></li>
+                  <li><a href="#">Alt Seçenek 2</a></li>
+                  <li><a href="#">Alt Seçenek 3</a></li>
+                </ul>
+              </li>
+              <li class="top-item"><a href="#">Seçenek 5</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Alt Seçenek 1</a></li>
+                  <li><a href="#">Alt Seçenek 2</a></li>
+                  <li><a href="#">Alt Seçenek 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="col-12 conclude" id="sabit-menü">
+            <p class="content-title">
+                SABİT MENÜ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;div class="sidebar"&gt;
+                &lt;ul class="menu"&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Grid Yapısı&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;TABLOLAR&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Hizmetler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Ürünler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;İletişim&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+                </code></pre>
+              </div>
+              
+            <div class="col-6 sidebar1">
+                <ul class="menu">
+                    <li><a href="#">Grid Yapısı</a></li>
+                    <li><a href="#">TABLOLAR</a></li>
+                    <li><a href="#">Hizmetler</a></li>
+                    <li><a href="#">Ürünler</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+                </div>
+
+        </div><br>
+        <section class="col-12 conclude" id="block-menü">
+            <p class="content-title">
+                BLOCK MENÜ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;nav class="col-6 nav-block"&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Ana Sayfa&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Hizmetler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Ürünler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;İletişim&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+                </code></pre>
+              </div>
+              
+
+            <nav class="col-6 nav-block">
+                <ul>
+                  <li><a href="#">Ana Sayfa</a></li>
+                  <li><a href="#">Hizmetler</a></li>
+                  <li><a href="#">Ürünler</a></li>
+                  <li><a href="#">İletişim</a></li>
+                </ul>
+              </nav>
+        </div><br>
+              
+
+          
+        <section class="col-12 conclude" id="inline-menü">
+            <p class="content-title">
+                İNLİNE MENÜ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+              &lt;nav class="nav-inline"&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Ana Sayfa&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Hizmetler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;Ürünler&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;İletişim&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+                </code></pre>
+              </div>
+              
+            <nav class="col-6 nav-inline">
+                <ul>
+                  <li><a href="#">Ana Sayfa</a></li>
+                  <li><a href="#">Hizmetler</a></li>
+                  <li><a href="#">Ürünler</a></li>
+                  <li><a href="#">İletişim</a></li>
+                </ul>
+              </nav>
+        </div><br>
+
+
+        <section class="col-12 conclude" id="FORM">
+            <p class="content-title">
+                FORM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;form&gt;
+                  &lt;input type="text" class="form-element" placeholder="Adınız"&gt;
+                  &lt;input type="email" class="form-element" placeholder="E-posta Adresiniz"&gt;
+                  &lt;textarea class="form-element" placeholder="Mesajınız"&gt;&lt;/textarea&gt;
+                  &lt;button type="submit" class="form-element submit-button"&gt;Gönder&lt;/button&gt;
+                &lt;/form&gt;
+                </code></pre>
+              </div>
+              
+            <form class="col-6">
+                <input type="text" class="form-element" placeholder="Adınız">
+                <input type="email" class="form-element" placeholder="E-posta Adresiniz">
+                <textarea class="form-element" placeholder="Mesajınız"></textarea>
+                <button type="submit" class="form-element submit-button">Gönder</button>
+              </form>
+              
+        </div><br>
+
+        <!-- RESİM CLASLARI -->
+        <section class="col-12 conclude" id="RESİM">
+            <p class="content-title">
+                RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row" id="centered">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 centered-image"&gt;
+                    &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+        <div class="col-6 centered-image">
+            <img src="assets/images/slider1.jpeg" alt="">
+        </div>
+         </div><br>
+
+
+         <section class="col-12 conclude" id="vertically">
+            <p class="content-title">
+                VERİTİCALLY RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 vertically-centered-image"&gt;
+                    &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+        <div class="col-6 vertically-centered-image">
+            <img src="assets/images/slider1.jpeg" alt="">
+        </div>
+         </div><br>
+
+
+         <section class="col-12 conclude" id="original-size">
+            <p class="content-title">
+               ORİGİNAL SİZE RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 original-size-image"&gt;
+                    &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+        <div class="col-6 original-size-image">
+            <img src="assets/images/slider1.jpeg" alt="">
+        </div>
+         </div><br>
+
+         <section class="col-12 conclude" id="horizontally">
+            <p class="content-title">
+                HORİZONTALLY RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+        <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 horizontally-centered-image"&gt;
+                    &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+        <div class="col-6 horizontally-centered-image">
+            <img src="assets/images/slider1.jpeg" alt="">
+        </div>
+         </div><br>
+
+         <section class="col-12 conclude" id="rounded">
+            <p class="content-title">
+                ROUNDED RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+
+         <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 img-rounded"&gt;
+                  &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+            <div class="col-6 img-rounded">
+                <img src="assets/images/slider1.jpeg" alt="">
+            </div>
+         </div><br>
+
+         <section class="col-12 conclude" id="regular">
+            <p class="content-title">
+                REGULAR RESİM</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+
+         <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6 img-regular"&gt;
+                  &lt;img src="assets/images/slider1.jpeg" alt=""&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+            
+            <div class="col-6 img-regular">
+                <img src="assets/images/slider1.jpeg" alt="">
+            </div>
+         </div><br>
+
+<!-- BUTON TASARIMLARI -->
+<section class="col-12 conclude" id="BUTON">
+    <p class="content-title">
+        BUTON</p>
+    <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+</section> <br>
+
+         <div  class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;button class="btn btn-red"&gt;Red Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-red"&gt;Red Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-blue"&gt;Blue Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-blue"&gt;Blue Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-green"&gt;Green Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-green"&gt;Green Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-orange"&gt;Orange Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-orange"&gt;Orange Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-purple"&gt;Purple Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-purple"&gt;Purple Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-pink"&gt;Pink Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-pink"&gt;Pink Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-brown"&gt;Brown Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-brown"&gt;Brown Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-gray"&gt;Gray Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-gray"&gt;Gray Outline Button&lt;/button&gt;
+            
+                &lt;button class="btn btn-black"&gt;Black Button&lt;/button&gt;
+                &lt;button class="btn-outline btn-outline-black"&gt;Black Outline Button&lt;/button&gt;
+                </code></pre>
+            </div>
+            
+
+
+            <div class="col-6">
+                <button class="btn btn-red">Red Button</button>
+<button class="btn-outline btn-outline-red">Red Outline Button</button>
+
+<button class="btn btn-blue">Blue Button</button>
+<button class="btn-outline btn-outline-blue">Blue Outline Button</button>
+
+<button class="btn btn-green">Green Button</button>
+<button class="btn-outline btn-outline-green">Green Outline Button</button>
+
+<button class="btn btn-orange">Orange Button</button>
+<button class="btn-outline btn-outline-orange">Orange Outline Button</button>
+
+<button class="btn btn-purple">Purple Button</button>
+<button class="btn-outline btn-outline-purple">Purple Outline Button</button>
+
+<button class="btn btn-pink">Pink Button</button>
+<button class="btn-outline btn-outline-pink">Pink Outline Button</button>
+
+<button class="btn btn-brown">Brown Button</button>
+<button class="btn-outline btn-outline-brown">Brown Outline Button</button>
+
+<button class="btn btn-gray">Gray Button</button>
+<button class="btn-outline btn-outline-gray">Gray Outline Button</button>
+
+<button class="btn btn-black">Black Button</button>
+<button class="btn-outline btn-outline-black">Black Outline Button</button>
+
+            </div>
+         </div><br>
+         <section class="col-12 conclude" id="METİNLER">
+            <p class="content-title">
+                METİN ÇEŞİTLERİ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+         <div class="row"> 
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div&gt;
+                    &lt;p class="times"&gt;Bu paragraf Times New Roman fontunu kullanıyor.&lt;/p&gt;
+                    &lt;p class="arial"&gt;Bu paragraf Arial fontunu kullanıyor.&lt;/p&gt;
+                    &lt;p class="roboto"&gt;Bu paragraf Roboto fontunu kullanıyor.&lt;/p&gt;
+                    &lt;p class="opensans"&gt;Bu paragraf Open Sans fontunu kullanıyor.&lt;/p&gt;
+                    &lt;p class="georgia"&gt;Bu paragraf Georgia fontunu kullanıyor.&lt;/p&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+            <div class="col-6">
+            <p class="times">Bu paragraf Times New Roman fontunu kullanıyor.</p>
+            <p class="arial">Bu paragraf Arial fontunu kullanıyor.</p>
+            <p class="roboto">Bu paragraf Roboto fontunu kullanıyor.</p>
+            <p class="opensans">Bu paragraf Open Sans fontunu kullanıyor.</p>
+            <p class="georgia">Bu paragraf Georgia fontunu kullanıyor.</p>
+        </div>
+         </div><br>
+
+         <section class="col-12 conclude" id="MARGİN-PADDİNG">
+            <p class="content-title">
+                MARGİN-PADDİNG</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+         <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="div1"&gt;32px margin ve 24px padding&lt;/div&gt;
+                &lt;div class="div2"&gt;16px margin ve 12px padding&lt;/div&gt;
+                &lt;div class="div3"&gt;8px margin ve 0px padding&lt;/div&gt;
+                </code></pre>
+            </div>
+            <div class="col-6">
+                <div class="div3">8px margin ve 0px padding</div>
+                <div class="div2">16px margin ve 12px padding</div>
+                <div class="div1">32px margin ve 24px padding</div>
+        </div>
+         </div><br>
+         <section class="col-12 conclude" id="BAŞLIK">
+            <p class="content-title">
+                BAŞLIK ÇEŞİTLERİ</p>
+            <p>Aşağıda sol tarafta gösterilen class yapısını kullanarak sağ tarafta örnek olarak gösterilen  çağırabilirsiniz.</p>
+        </section> <br>
+         <div class="row">
+            <div class="col-6 code-container">
+                <pre><code class="language-html">
+                &lt;div class="col-6"&gt;
+                    &lt;p class="text-ts7"&gt;Örnek paragraf (28px).&lt;/p&gt;
+            
+                    &lt;h1 class="heading-h1"&gt;Başlık 1 (40px)&lt;/h1&gt;
+                    &lt;h2 class="heading-h2"&gt;Başlık 2 (32px)&lt;/h2&gt;
+                    &lt;h3 class="heading-h3"&gt;Başlık 3 (24px)&lt;/h3&gt;
+                    &lt;h4 class="heading-h4"&gt;Başlık 4 (20px)&lt;/h4&gt;
+                    &lt;h5 class="heading-h5"&gt;Başlık 5 (18px)&lt;/h5&gt;
+                &lt;/div&gt;
+                </code></pre>
+            </div>
+            
+
+         <div class="col-6">
+            <p class="text-ts7">Örnek paragraf (28px).</p>
+    
+            <h1 class="heading-h1">Başlık 1 (40px)</h1>
+            <h2 class="heading-h2">Başlık 2 (32px)</h2>
+            <h3 class="heading-h3">Başlık 3 (24px)</h3>
+            <h4 class="heading-h4">Başlık 4 (20px)</h4>
+            <h5 class="heading-h5">Başlık 5 (18px)</h5>
+         </div>
+         </div>
+
+         
+        </div>
+        
+        
+    
+      
+</body>
+</html>

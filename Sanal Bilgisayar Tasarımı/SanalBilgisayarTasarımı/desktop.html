@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desktop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+  </head>
+  <body style="background-image: url('assets/images/Backgraunds/login.png'); " >
+   
+    <div class="flex-container">
+  <div  class="elements" data-bs-toggle="modal" data-bs-target="#pcModal"><i class="fas fa-desktop"></i>
+   <p>Bilgisayarım</p></div>
+
+    <div  class="elements" data-bs-toggle="modal" data-bs-target="#appModal"><i class="fas fa-cubes"></i>
+   <p>Uygulamalar</p></div>
+
+    <div  class="elements" data-bs-toggle="modal" data-bs-target="#imagesModal"><i class="fas fa-image"></i>
+   <p>Resimler</p></div>
+    <div  class="elements" data-bs-toggle="modal" data-bs-target="#docModal"> <i class="fas fa-folder"></i>
+   <p>Belgeler</p></div>
+  
+    
+</div>
+
+</div>
+<!-- Bilgisayarım Modal -->
+<div id="pcModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document"> <!-- modal-lg sınıfı geniş bir modal sağlar -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bilgisayarım</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    
+        <div class="row">
+          <!-- Sol Sütun -->
+          <div class="col-md-3 border-right"> <!-- border-right sınıfı bölümler arasına çizgi çeker -->
+            <!-- İkonlar -->
+            <div class="icon-container mb-3">
+              <i class="fas fa-desktop"></i> Bilgisayarım
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#appModal">
+              <i class="fas fa-cubes"></i> Uygulamalar
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#imagesModal">
+              <i class="fas fa-image"></i> Resimler
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#docModal">
+              <i class="fas fa-folder"></i> Belgelerim
+            </div>
+          </div>
+          <!-- Sağ Sütun -->
+          <div class="col-md-9">
+            <div class="file-manager">
+              <div class="drive">
+                <div class="drive-icon" style="background-image: url('path/to/drive-image.png');"></div>
+                <div class="drive-info">
+                  <span class="drive-name">Windows (C:)</span>
+                  <span class="drive-size">3,69 GB boş, 110 GB toplam</span>
+                  <div class="drive-usage-bar"><div class="drive-used" style="width: 87%;"></div></div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Uygulamalar Modal -->
+<div id="appModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Uygulamalarım</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+        <div class="row">
+          <!-- Sol Sütun -->
+         <div class="col-md-3 border-right">
+            <!-- İkonlar -->
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#pcModal">
+              <i class="fas fa-desktop"></i> Bilgisayarım
+            </div>
+            <div class="icon-container mb-3">
+              <i class="fas fa-cubes"></i> Uygulamalar
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#imagesModal">
+              <i class="fas fa-image"></i> Resimler
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#docModal">
+              <i class="fas fa-folder"></i> Belgelerim
+            </div>
+          </div>
+          <!-- Sağ Sütun -->
+          <div class="col-md-9">
+            <div class="application-icons">
+              <div class="icon-container mb-3">
+                <i class="fab fa-windows"></i> Windows
+              </div>
+              <div class="icon-container mb-3">
+                <i class="fab fa-app-store-ios"></i> App Store
+              </div>
+              <div class="icon-container mb-3">
+                <i class="fab fa-google-play"></i> Google Play
+              </div>
+              <div class="icon-container mb-3">
+                <i class="fab fa-github"></i> GitHub
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Resimler Modal -->
+<div id="imagesModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Resimler</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Sol Sütun -->
+          <div class="col-md-3 border-right"> 
+            <!-- İkonlar -->
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#pcModal">
+              <i class="fas fa-desktop"></i> Bilgisayarım
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#appModal">
+              <i class="fas fa-cubes"></i> Uygulamalar
+            </div>
+            <div class="icon-container mb-3">
+              <i class="fas fa-image"></i> Resimler
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#docModal">
+              <i class="fas fa-folder"></i> Belgelerim
+            </div>
+          </div>
+          <!-- Sağ taraf -->
+          <div class="col-md-9">
+          
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <img src="assets/images/slider/resim1.png" class="img-thumbnail" onclick="openImageModal('assets/images/slider/resim1.png');" >
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/images/slider/resim2.png" class="img-thumbnail" onclick="openImageModal('assets/images/slider/resim2.png');" >
+              </div>
+              <div class="col-md-4 mb-3">
+                <img src="assets/images/slider/resim3.png" class="img-thumbnail" onclick="openImageModal('assets/images/slider/resim3.png');" >
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Resimler İçin Modal -->
+<div id="imageModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="" class="img-fluid" > 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Belgeler Modal -->
+<div id="docModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Dosyalarım</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+        <div class="row">
+          <!-- Sol Sütun -->
+          <div class="col-md-3 border-right"> 
+            <!-- İkonlar -->
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#pcModal">
+              <i class="fas fa-desktop"></i> Bilgisayarım
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#appModal">
+              <i class="fas fa-cubes"></i> Uygulamalar
+            </div>
+            <div class="icon-container mb-3" data-bs-toggle="modal" data-bs-target="#imagesModal">
+              <i class="fas fa-image"></i> Resimler
+            </div>
+            <div class="icon-container mb-3">
+              <i class="fas fa-folder"></i> Belgelerim
+            </div>
+          </div>
+          <!-- Sağ Sütun -->
+          <div class="col-md-9">
+           
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="icon-container">
+                  <i class="fas fa-file-word"></i> Word Dosyası
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="icon-container">
+                  <i class="fas fa-file-excel"></i> Excel Dosyası
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="icon-container">
+                  <i class="fas fa-file-pdf"></i> PDF Dosyası
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom ">
+        <div class="container-fluid">
+            <div class="dropup">
+                <button role="button" type="button" class="btn dropdown" data-bs-toggle="dropdown"> 
+                    <i class="fab fa-windows"></i>
+                </button>
+                  <ul  class="dropdown-menu ps-3  p-5" style="width: 500px; height: auto; ">
+                    
+                    
+
+                    <div class="sonkullanılanlar">
+                    <li><a class="dropdown-item" href="#"> <img style="width: 100px; height: 100px;" src="./assets/images/baslat/eposta.png" alt=""> </a></li>
+                    <li><a class="dropdown-item" href="#"> <img style="width: 100px; height: 100px;" src="./assets/images/baslat/store.png" alt=""> </a></li>
+                   
+                 </div>
+
+                    
+                    <li><a class="dropdown-item" id="baslatmenu" data-bs-toggle="modal" data-bs-target="#docModal" > <i class="fas fa-folder" ></i> Belgeler</a></li>
+                    <li><a class="dropdown-item" id="baslatmenu" data-bs-toggle="modal" data-bs-target="#imagesModal" > <i class="fas fa-image" ></i></i> Resimler</a></li>
+                    <li><a class="dropdown-item" id="baslatmenu" data-bs-toggle="modal" data-bs-target="#appModal"  > <i class="fas fa-cubes"></i> Uygulamalar</a></li>
+                    <li><a class="dropdown-item" id="baslatmenu" data-bs-toggle="modal" data-bs-target="#pcModal" >  <i class="fas fa-desktop"></i> Bilgisayarım</a></li>
+                   
+                    <li><a onclick="pckapat()" class="dropdown-item" id="baslatmenu" href="#"> <i class="fas fa-power-off"></i> Bilgisayarı Kapat</a></li>
+                  
+                   
+                  </ul>
+                  
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+              </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+               <i style="margin-right: 15px !important;
+  padding-top: 12px !important;" class="fa-solid fa-angle-up"></i>
+              </li>
+
+              <li class="nav-item">
+               <i id="wifi" class="fa-solid fa-wifi"></i>
+              </li>
+              <li class="nav-item">
+                <i style="margin-right: 15px !important;
+  padding-top: 12px !important;" id="sound" class="fa-solid fa-volume-high"></i>
+              </li>
+              
+
+             
+            </ul>
+              <div id="time"></div>
+              <div id="date"></div>
+            
+           
+          </div>
+        </div>
+      </nav></div>
+
+
+ <script src="assets/js/script.js"></script>
+
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  </body>
+</html>

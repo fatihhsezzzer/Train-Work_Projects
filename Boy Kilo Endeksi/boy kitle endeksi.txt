@@ -1,0 +1,30 @@
+function hesaplaBKE() {
+    var boyInput = parseFloat(document.getElementById("boy").value);
+    var kiloInput = parseFloat(document.getElementById("kilo").value);
+    var yasInput = parseInt(document.getElementById("yas").value);
+    var cinsiyetInput = document.getElementById("cinsiyet").value;
+
+    var bke = kiloInput / ((boyInput / 100) ** 2);
+
+    if (cinsiyetInput === "erkek") {
+        bke *= 1.1;
+    } else {
+        bke *= 0.9;
+    }
+
+    var yasKatsayisi = 1 + Math.floor(yasInput / 10) * 0.01;
+    bke *= yasKatsayisi;
+
+    var durum;
+    if (bke < 18.5) {
+        durum = "Zayıf";
+    } else if (bke < 24.9) {
+        durum = "Normal";
+    } else if (bke < 29.9) {
+        durum = "Kilolu";
+    } else {
+        durum = "Obez";
+    }
+
+    document.getElementById("bkeSonuc").innerHTML = "BKE Sonucu: " + bke.toFixed(2) + " - Durum: " + durum;
+}
